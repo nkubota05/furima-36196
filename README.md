@@ -16,11 +16,11 @@
 
 ### Association
 
-- has_many :order
+- has_many :orders
 - has_many :items
 
 
-## destinationテーブル
+## destination テーブル
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
@@ -37,7 +37,7 @@
 
 - belongs_to :order
 
-## itemsテーブル
+## items テーブル
 
 | Column           | Type       | Options                         |
 | ---------------- | ---------- | ------------------------------- |
@@ -58,7 +58,7 @@
 - has_one :order
 
 
-## orderテーブル
+## orders テーブル
 
 | Column | Type       | Options                         |
 | ------ | ---------- | ------------------------------- |
