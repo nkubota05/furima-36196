@@ -16,7 +16,7 @@
 
 ### Association
 
-- has_one :order
+- has_many :order
 - has_many :items
 
 
@@ -24,8 +24,9 @@
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
+| order            | references | null: false, foreign_key: true |
 | post_code        | string     | null: false                    |
-| prefecture_id    | references | null: false, foreign_key: true |
+| prefecture_id    | integer    | null: false, foreign_key: true |
 | city             | string     | null: false                    |
 | address          | string     | null: false                    |
 | building_name    | string     |                                |
@@ -38,17 +39,17 @@
 
 ## itemsテーブル
 
-| Column        | Type       | Options                         |
-| ------------- | ---------- | ------------------------------- |
-| name          | string     | null: false                     |
-| price         | integer    | null: false                     |
-| description   | text       | null: false                     |
-| status        | references | null: false, foreign_key: true  |
-| shipping_cost | references | null: false, foreign_key: true  |
-| prefecture    | references | null: false, foreign_key: true  |
-| user	        | references | null: false, foreign_key: true  |
-| brand	        | references | null: false, foreign_key: true  |
-| category      | references | null: false, foreign_key: true  |
+| Column           | Type       | Options                         |
+| ---------------- | ---------- | ------------------------------- |
+| name             | string     | null: false                     |
+| price            | integer    | null: false                     |
+| description      | text       | null: false                     |
+| user             | references | null: false, foreign_key: true  |
+| status_id        | integer    | null: false, foreign_key: true  |
+| shipping_cost_id | integer    | null: false, foreign_key: true  |
+| prefecture_id    | integer    | null: false, foreign_key: true  |
+| brand_id         | integer    | null: false, foreign_key: true  |
+| category_id      | integer    | null: false, foreign_key: true  |
 
 
 ### Association
