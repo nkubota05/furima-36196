@@ -48,7 +48,7 @@
 | status_id        | integer    | null: false, foreign_key: true  |
 | shipping_cost_id | integer    | null: false, foreign_key: true  |
 | prefecture_id    | integer    | null: false, foreign_key: true  |
-| brand_id         | integer    | null: false, foreign_key: true  |
+| shipping_day_id  | integer    | null: false, foreign_key: true  |
 | category_id      | integer    | null: false, foreign_key: true  |
 
 
