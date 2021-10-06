@@ -35,6 +35,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'gimei'
+
 end
 
 group :development do
@@ -60,3 +61,6 @@ group :development do
   gem 'rubocop', require: false
 end
 gem 'devise'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+gem 'active_hash'
