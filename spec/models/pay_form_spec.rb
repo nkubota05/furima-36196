@@ -48,7 +48,7 @@ RSpec.describe PayForm, type: :model do
       it '電話番号が空だと保存できないこと' do
         @pay_form.phone_number = ''
         @pay_form.valid?
-        expect(@pay_form.errors.full_messages).to include("Phone number  Input only number")
+        expect(@pay_form.errors.full_messages).to include('Phone number  Input only number')
       end
       it '電話番号に半角数字以外が含まれている場合は登録できない' do
         @pay_form.phone_number = '090１2111122'
